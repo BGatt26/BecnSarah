@@ -1,0 +1,258 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.content90 {
+  transform:rotate(90deg);
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.content .text {
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding-left:  10px;
+}
+
+.content90 .text {
+  transform:rotate(270deg);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+
+
+  width: auto; /* Full width */
+  position: absolute; /* Position the background text */
+  top: 30px; /* At the bottom. Use top:0 to append it to the top */
+  padding-left:  10px;
+  
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    width: 100%;
+  }
+}
+
+
+
+/* Lightbox*/
+
+.preview {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.row > .col {
+  padding: 0 8px;
+}
+
+.col {
+  flex: 25%;
+  float: left;
+  max-width: 10%;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Now you want to define what the lightbox will look like. Note that you have the display
+   as none. You don't want it to show until the user clicks on one of the previews. 
+   You will change this display property with JavaScript below. */
+   
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 10px 62px 0px 62px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 10% 10% 10% 10%;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Same with your slides, you set the display to none, because you want to choose which 
+   one is shown at a time. */
+
+.slide {
+  display: none;
+}
+
+.image-slide {
+  width: 100%;
+}
+
+.modal-preview {
+  width: 100%;
+  padding: 10% 10% 10% 10%;
+}
+
+.dots {
+  display: flex grid;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* You want the previews a little transparent to show that they are "inactive". 
+   You then add an .active or :hover class to animate the selections for your user when
+   they interact with your controls and clickable content.
+ */
+
+img.preview, img.modal-preview {
+}
+
+img.active,
+.preview:hover,
+.modal-preview:hover {
+  opacity: 0.6;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.rotate90 {
+    transform:rotate(90deg);
+
+}
+
+
+

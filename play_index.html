@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./play.css" rel="stylesheet" type="text/css">
+<script src="./play.js"></script>
+<title>Our Photos</title>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Our Photos</h1>
+<hr>
+
+<h2>2017</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_1.jpg" alt="Disney Balloons at Pride" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" style="width:100%">
+      <div class="text">
+      <h3>London Pride</h3>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="./photos/photo_gallery/2017/Sarah's Birthday 2017/SB_2.jpg" alt="Sarah's Birthday" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" style="width:100%">
+    <div class="text">
+      <h3>Sarah's Birthday</h3>
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_1.jpg" alt="Bec's 40th" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" style="width:100%">
+     <div class="text">
+      <h3>Bec's 40th Birthday</h3>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- END GRID -->
+
+
+
+<!-- END MAIN -->
+
+
+<!-- 2017 - LONDON PRIDE -->
+<div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_1.jpg" class="image-slide" alt="Disney Balloons at Pride"/>
+    </div>
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_2.jpg" class="image-slide" alt="Pride"/>
+    </div>    
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_3.jpg" class="image-slide rotate90" alt="Pride">
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_4.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_5.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_6.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_7.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_8.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_9.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_10.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_11.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_12.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_13.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_14.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_15.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_16.jpg" class="image-slide rotate90" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_17.jpg" class="image-slide" alt="Pride" width=/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_18.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_18.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_19.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_20.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_21.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_22.jpg" class="image-slide" alt="Pride"/>
+    </div>
+        </div>
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_23.jpg" class="image-slide" alt="Pride"/>
+    </div>
+  
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  
+    <div class="dots">
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_1.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_2.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_3.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(3)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_4.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Pride"/>
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_5.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(5)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_6.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(6)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_7.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(7)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_8.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(8)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_9.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(9)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_10.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(10)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_11.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(11)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_12.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(12)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_13.jpg" class="modal-preview hover-shadow" onclick="toSlide(13)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_14.jpg" class="modal-preview hover-shadow" onclick="toSlide(14)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_15.jpg" class="modal-preview hover-shadow" onclick="toSlide(15)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_16.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(16)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_17.jpg" class="modal-preview hover-shadow" onclick="toSlide(17)" alt="Pride" max-width="100px"/>
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_18.jpg" class="modal-preview hover-shadow" onclick="toSlide(18)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_19.jpg" class="modal-preview hover-shadow" onclick="toSlide(19)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_20.jpg" class="modal-preview hover-shadow" onclick="toSlide(20)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_21.jpg" class="modal-preview hover-shadow" onclick="toSlide(21)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_22.jpg" class="modal-preview hover-shadow" onclick="toSlide(22)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_23.jpg" class="modal-preview hover-shadow" onclick="toSlide(23)" alt="Pride" />
+      </div>
+    </div>
+  </div>
+
+<!-- 2017 - SARAH'S BIRTHDAY -->
+<div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_1.jpg" class="image-slide" alt="Disney Balloons at Pride"/>
+    </div>
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_2.jpg" class="image-slide" alt="Pride"/>
+    </div> 
+  
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  
+    <div class="dots">
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_1.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_2.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Pride" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/London Pride 2017/Pride_3.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(3)" alt="Pride" />
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- 2017 - BEC'S 40TH BIRTHDAY -->
+  <div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_1.jpg" class="image-slide" alt="Majorca"/>
+    </div>
+    <div class="slide">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_2.jpg" class="image-slide" alt="Majorca"/>
+    </div> 
+        <div class="slide">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_3.jpg" class="image-slide" alt="Majorca"/>
+    </div> 
+  
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  
+    <div class="dots">
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_1.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Majorca" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_2.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Majorca" />
+      </div>
+      <div class="col">
+        <img src="./photos/photo_gallery/2017/Majorca Bec's 40th 2017/B40_3.jpg" class="modal-preview hover-shadow rotate90" onclick="toSlide(3)" alt="Majorca" />
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+</body>
+</html>

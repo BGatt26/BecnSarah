@@ -1,0 +1,113 @@
+body {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.panel-title{
+  font-size: 150px;
+  word-break: break-all;
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+.clickable .glyphicon
+{
+}    display: inline-block;
+    padding: 6px 12px;
+}
+
+.panel-heading span
+{
+    margin-top: -23px;
+    font-size: 15px;
+    margin-right: -9px;
+}
+a.clickable { color: inherit; }
+a.clickable:hover { text-decoration:none; 
+}
+
+/* Makes entire panel clickable */
+
+div.panel-group div.panel-heading a{text-decoration:none;display:block;padding:10px 15px;}
+
+div.panel-group div.panel-heading a:focus,div.panel-group div.panel-heading a:hover{box-shadow:0}
+
+div.panel-group .panel-heading{padding:0}
+
+
+/*Controls each panel dropdown*/
+
+/*.row {
+  margin: 8px -16px;
+}*/
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.content {
+  background-color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.content90 {
+  transform:rotate(90deg);
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.content .text {
+  position: absolute; /* Position the background text */
+  top: 0; /* Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding-left: 10px;
+  height: 28px;
+  font-size: large;
+  font-weight; 500;
+  text-align: center;
+}
+
+.content90 .text {
+  transform:rotate(270deg);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+
+
+  width: auto; /* Full width */
+  position: absolute; /* Position the background text */
+  top: 30px; /* At the bottom. Use top:0 to append it to the top */
+  padding-left:  10px;
+}
